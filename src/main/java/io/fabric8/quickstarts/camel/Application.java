@@ -34,7 +34,7 @@ public class Application extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
-        from("timer://foo?period=12000")
+        from("timer://foo?period=8000")
             .setBody().constant("Hello World")
             .log(">>> ${body}");
     }
